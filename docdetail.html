@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Análisis documental{% endblock %}{% block content %}<section class="panel"><h3>{{doc.filename}}</h3><h3>Resultado IA</h3><pre>{{doc.analysis}}</pre><h3>Texto extraído</h3><pre>{{doc.body[:7000]}}</pre><a href="/documents">← Volver</a></section>{% endblock %}
